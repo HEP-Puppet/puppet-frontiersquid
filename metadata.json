@@ -1,0 +1,20 @@
+{
+  "name": "kreczko-frontiersquid",
+  "author": "kreczko",
+  "description": "",
+  "license": "",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "version": "0.0.1",
+  "checksums": {
+    "Modulefile": "df38b8763c53feaea84a7765322becc7",
+    "README.markdown": "58461c0c72dfa63f5ce6809ac8f22fac",
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "manifests/init.pp": "10f41c6f562ec8cb3d4f432839445778",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "tests/init.pp": "53db7e9af77f80eb21cae6effec74df1"
+  },
+  "dependencies": []
+}
