@@ -10,6 +10,6 @@
 #
 # Sample Usage:
 #
-class frontiersquid {
+class frontiersquid inherits frontiersquid::params {
 
 }

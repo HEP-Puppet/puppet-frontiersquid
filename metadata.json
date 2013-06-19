@@ -1,20 +1,28 @@
 {
   "name": "kreczko-frontiersquid",
   "author": "kreczko",
-  "description": "",
-  "license": "",
-  "project_page": "",
-  "source": "",
-  "summary": "",
+  "description": "A Puppet module for the installation and setup of a frontier squid",
+  "license": "Apache License, Version 2.0",
+  "project_page": "https://github.com/HEP-Puppet/puppet-frontiersquid",
+  "source": "git@github.com:HEP-Puppet/puppet-frontiersquid.git",
+  "summary": "A Puppet module for the installation and setup of a frontier squid",
   "version": "0.0.1",
   "checksums": {
-    "Modulefile": "df38b8763c53feaea84a7765322becc7",
-    "README.markdown": "58461c0c72dfa63f5ce6809ac8f22fac",
+    "Modulefile": "61d3855388747a63251bcc09e5633b1e",
+    "README.md": "73e38a03e9ff1f0823374a9064f7b14a",
     "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
-    "manifests/init.pp": "10f41c6f562ec8cb3d4f432839445778",
+    "manifests/init.pp": "fde866a0522a3839103dd69ca40d62b0",
+    "manifests/install.pp": "782b12428b20cc66dd2c287cb8747ca1",
+    "manifests/params.pp": "2987256c0866e910fb2239a7f092d67e",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "templates/customize.sh.erb": "5251bfcfb57db8a04e81d9e876651e6b",
     "tests/init.pp": "53db7e9af77f80eb21cae6effec74df1"
   },
-  "dependencies": []
+  "dependencies": [
+    {
+      "name": "traylenator/cvmfs",
+      "version_requirement": "\u003e\u003d0.0.2"
+    }
+  ]
 }

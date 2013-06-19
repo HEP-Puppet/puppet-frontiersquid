@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Edit customize.sh as you wish to customize squid.conf.
+# It will not be overwritten by upgrades.
+# See customhelps.awk for information on predefined edit functions.
+# In order to test changes to this, run this to regenerate squid.conf:
+#       /usr/sbin/fn-local-squid.sh
+# or do any command with the frontier-squid init.d script.
+# Avoid single quotes in the awk source or you have to protect them from bash.
+#
+
+awk --file `dirname $0`/customhelps.awk --source '{
+setoption("acl NET_LOCAL src", "<%= scope.lookupvar('frontiersquid::params::net_local_src') %>")
+setoption("cache_mem", "<%= scope.lookupvar('frontiersquid::params::cache_mem_in_MB') %> MB")
+setoptionparameter("cache_dir", 3, "<%= scope.lookupvar('frontiersquid::params::cache_dir_in_MB') %>")
+print
+}'
+    
